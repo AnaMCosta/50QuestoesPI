@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int ni, max, max2;
+    
+    scanf("%d", &ni);
+    max = ni;
+    max2 = ni;
+    while (ni != 0) {
+      scanf("%d", &ni);
+      
+      if ((ni<max) && (ni>max2)) max2 = ni;
+      else 
+      if (ni>max) max2 = max; max = ni;
+     
+
+    };
+
+    printf("%d", max2);
+
+    return 0;
+  
+}
